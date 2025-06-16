@@ -1,0 +1,23 @@
+O algoritmo tem como objetivo calcular o resultado da multiplicação de um número inteiro n, de 1 a 10, pela constante 9, utilizando uma regra simplificada.
+
+Entrada:
+O programa solicita ao usuário que digite um número inteiro n, tal que 1 ≤ n ≤ 10.
+
+Processamento:
+Utiliza-se a regra da tabuada do 9:
+
+O primeiro dígito do resultado será n - 1 (dezena).
+
+O segundo dígito será 10 - n (unidade).
+
+O resultado final é obtido multiplicando-se o primeiro dígito por 10 e somando o segundo:
+
+resultado = (n - 1) * 10 + (10 - n)
+
+Saída:
+O algoritmo imprime o valor final da multiplicação de 9 × n.
+
+Exemplo:
+Entrada: 4
+Processamento: (4 - 1) * 10 + (10 - 4) = 3 * 10 + 6 = 36
+Saída: 36

@@ -1,0 +1,20 @@
+INÍCIO
+
+// Entrada
+ESCREVA "Digite um número inteiro entre 1 e 10:"
+LEIA n
+
+// Verifica se n está dentro do intervalo permitido
+SE n < 1 OU n > 10 ENTÃO
+    ESCREVA "Número inválido. Digite um valor entre 1 e 10."
+SENÃO
+    // Processamento
+    dezena ← n - 1
+    unidade ← 10 - n
+    resultado ← dezena * 10 + unidade
+
+    // Saída
+    ESCREVA "O resultado de 9 x ", n, " é: ", resultado
+FIMSE
+
+FIM
