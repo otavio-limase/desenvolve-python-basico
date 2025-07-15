@@ -1,0 +1,18 @@
+livros = [
+    ["O Caçador de Pipas", "Khaled Hosseini", 2003, 368],
+    ["Torto Arado", "Itamar Vieira Junior", 2019, 264],
+    ["1984", "George Orwell", 1949, 328],
+    ["Dom Casmurro", "Machado de Assis", 1899, 256],
+    ["A Revolução dos Bichos", "George Orwell", 1945, 152],
+    ["O Hobbit", "J.R.R. Tolkien", 1937, 310],
+    ["Ensaio Sobre a Cegueira", "José Saramago", 1995, 312],
+    ["It", "Stephen King", 1986, 1104],
+    ["O Senhor dos Anéis", "J.R.R. Tolkien", 1954, 1216],
+    ["A Menina que Roubava Livros", "Markus Zusak", 2005, 480]
+]
+
+with open("meus_livros.csv", "w", encoding="utf-8") as f:
+    f.write("Título,Autor,Ano de publicação,Número de páginas\n")
+    for livro in livros:
+        linha = ",".join([str(item) for item in livro])
+        f.write(linha + "\n")
